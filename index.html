@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryhze - Coming Soon</title>
+  <script type="module" src="/src/js/main.js"></script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/src/assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="depth-layer depth-layer-1"></div>
+  <div class="depth-layer depth-layer-2"></div>
+  <div class="depth-layer depth-layer-3"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Mobile Navigation Toggle -->
+  <button class="mobile-nav-toggle" id="mobileNavToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-toggle" id="closeNav">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="http://localhost/ryhzeplatform/#hero" class="mobile-nav-link">Home</a>
+      <a href="http://localhost/ryhzeplatform/#features" class="mobile-nav-link">Features</a>
+      <a href="http://localhost/ryhzeplatform/#preview" class="mobile-nav-link">Preview</a>
+      <a href="http://localhost/ryhzeplatform/#cta" class="mobile-nav-link">Get Early Access</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="/3.png" alt="Ryhze Logo" class="logo">
+
+      <div class="hero-title">
+        <div class="hero-title-main">A unified blockchain-powered platform</div>
+        <div class="hero-title-sub">giving true ownership to creators</div>
+      </div>
+
+      <div class="launch-counter">
+        <div class="counter-label">Launching</div>
+        <div class="counter-date">August 8, 2025</div>
+
+        <div class="counter-timer" id="countdown">
+          <div class="counter-block">
+            <div class="counter-value" id="days">91</div>
+            <div class="counter-unit">Days</div>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-block">
+            <div class="counter-value" id="hours">12</div>
+            <div class="counter-unit">Hours</div>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-block">
+            <div class="counter-value" id="minutes">55</div>
+            <div class="counter-unit">Minutes</div>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-block">
+            <div class="counter-value" id="seconds">35</div>
+            <div class="counter-unit">Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-form">
+                
+        
+        <form action="http://localhost/ryhzeplatform/" method="POST" class="email-form">
+          <input type="email" name="email" placeholder="Your email address" required="" class="email-input" fdprocessedid="ibcz05">
+          <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"><template shadowrootmode="closed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-lastpass-icon="true" style="position: absolute; cursor: pointer; height: 22px; max-height: 22px; width: 22px; max-width: 22px; top: 15.5px; left: -51px; z-index: auto; color: rgb(215, 64, 58);"><rect x="0.680176" y="0.763062" width="22.6392" height="22.4737" rx="4" fill="currentColor"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 7.9516C19.7935 7.64414 20.0427 7.3949 20.3502 7.3949C20.6576 7.3949 20.9069 7.64414 20.9069 7.9516V16.0487C20.9069 16.3562 20.6576 16.6054 20.3502 16.6054C20.0427 16.6054 19.7935 16.3562 19.7935 16.0487V7.9516Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.76288 13.6577C5.68525 13.6577 6.43298 12.9154 6.43298 11.9998C6.43298 11.0842 5.68525 10.3419 4.76288 10.3419C3.8405 10.3419 3.09277 11.0842 3.09277 11.9998C3.09277 12.9154 3.8405 13.6577 4.76288 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3298 13.6577C11.2521 13.6577 11.9999 12.9154 11.9999 11.9998C11.9999 11.0842 11.2521 10.3419 10.3298 10.3419C9.4074 10.3419 8.65967 11.0842 8.65967 11.9998C8.65967 12.9154 9.4074 13.6577 10.3298 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8964 13.6577C16.8188 13.6577 17.5665 12.9154 17.5665 11.9998C17.5665 11.0842 16.8188 10.3419 15.8964 10.3419C14.974 10.3419 14.2263 11.0842 14.2263 11.9998C14.2263 12.9154 14.974 13.6577 15.8964 13.6577Z" fill="white"></path></svg></template></div><button type="submit" class="btn" fdprocessedid="52oda">Get Early Access</button>
+        </form>
+        <div class="offer-tag">
+          <i class="fas fa-gift"></i>
+          First 3 months FREE + 20% off for a year
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Intro Section -->
+  <section class="features-intro">
+    <div class="container">
+      <div class="section-title">
+        <h2>One Platform, <span class="highlight">Unlimited Possibilities</span></h2>
+        <p>Ryhze unifies all your entertainment into a single blockchain-powered platform, giving true ownership to both creators and consumers. Experience the future of digital content.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="card-title">True Digital Ownership</h3>
+          <p>Own what you buy. Forever. All purchases and subscriptions are verified on the blockchain.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3 class="card-title">Transfer &amp; Trade</h3>
+          <p>Lend, sell, or gift your digital content and subscriptions with our secure marketplace.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3 class="card-title">Creator Economy</h3>
+          <p>Creators earn more through direct payments and ongoing royalties for secondary sales.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3 class="card-title">Blockchain Security</h3>
+          <p>Advanced encryption ensures your digital assets remain secure with permanent ownership records.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3 class="card-title">Future-Proof Content</h3>
+          <p>Your content never expires or disappears, even if platform policies change over time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="card-title">Community Focus</h3>
+          <p>Connect directly with creators and fans through decentralized community governance.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="card-title">Global Access</h3>
+          <p>No geographical limitations or regional restrictions for content access and sharing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Feature Section -->
+  <section class="feature-section video-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Premium Video Experience</h2>
+          <p class="feature-text">Stream your favorite shows, movies, and exclusive content with crystal-clear quality. Unlike traditional platforms, you truly own your subscriptions and purchased content through blockchain verification.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> 4K Ultra HD streaming across all devices</li>
+            <li><i class="fas fa-check-circle"></i> Transferable subscriptions you can share or sell</li>
+            <li><i class="fas fa-check-circle"></i> Exclusive blockchain-verified content rights</li>
+            <li><i class="fas fa-check-circle"></i> Ad-free option with dedicated subscription</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1616469829941-c7200edec809" alt="Premium Video Streaming">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">Video</div>
+            <div class="overlay-content">
+              <h4>Cinematic Experience</h4>
+              <p>Stream exclusive content with ownership rights secured by blockchain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio Feature Section -->
+  <section class="feature-section audio-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Immersive Audio Experience</h2>
+          <p class="feature-text">Stream millions of tracks in high fidelity audio. Support your favorite artists directly through our blockchain-powered royalty system that ensures fair compensation and true fan ownership.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> Lossless audio quality for audiophiles</li>
+            <li><i class="fas fa-check-circle"></i> Direct artist support with transparent royalties</li>
+            <li><i class="fas fa-check-circle"></i> Exclusive artist-to-fan experiences and content</li>
+            <li><i class="fas fa-check-circle"></i> Collectible digital albums with ownership rights</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1598488035139-bdbb2231ce04" alt="Premium Music Streaming">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">Audio</div>
+            <div class="overlay-content">
+              <h4>Sound Revolution</h4>
+              <p>High-fidelity audio with fair artist compensation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaming Feature Section -->
+  <section class="feature-section game-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Revolutionary Gaming Platform</h2>
+          <p class="feature-text">Access hundreds of games with a single subscription. Your in-game items, character skins, and achievements are secured by blockchain, making them truly yours to keep, trade, or sell.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> Cloud gaming across all your devices</li>
+            <li><i class="fas fa-check-circle"></i> True ownership of in-game assets and items</li>
+            <li><i class="fas fa-check-circle"></i> Player-driven marketplace for trading</li>
+            <li><i class="fas fa-check-circle"></i> Cross-game compatible items and currency</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1560419015-7c427e8ae5ba" alt="Gaming Platform">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">Gaming</div>
+            <div class="overlay-content">
+              <h4>Game Changer</h4>
+              <p>Own your in-game assets and trade them in our secure marketplace</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Books Feature Section -->
+  <section class="feature-section book-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Revolutionary Reading Experience</h2>
+          <p class="feature-text">Access thousands of books, magazines, and publications with true ownership. Your digital library is secured by blockchain technology, ensuring your purchases are permanently yours.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> Enhanced reading experience across devices</li>
+            <li><i class="fas fa-check-circle"></i> Lendable digital books with sharing rights</li>
+            <li><i class="fas fa-check-circle"></i> Author-direct publishing with fair royalties</li>
+            <li><i class="fas fa-check-circle"></i> Limited edition digital releases with certificates</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1544716278-e513176f20b5" alt="Digital Reading">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">Books</div>
+            <div class="overlay-content">
+              <h4>Page Turner</h4>
+              <p>Your digital library, secured forever with true ownership rights</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Content Feature Section -->
+  <section class="feature-section live-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Interactive Live Experiences</h2>
+          <p class="feature-text">Experience concerts, events, classes, and exclusive interactive sessions with your favorite creators. All content is available for replay with blockchain-verified access rights.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> High-definition live streaming worldwide</li>
+            <li><i class="fas fa-check-circle"></i> Interactive participation with creators</li>
+            <li><i class="fas fa-check-circle"></i> Exclusive virtual meet-and-greets</li>
+            <li><i class="fas fa-check-circle"></i> Perpetual access to event recordings</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1576085898323-218337e3e43c" alt="Live Content">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">Live</div>
+            <div class="overlay-content">
+              <h4>Live &amp; Interactive</h4>
+              <p>Connect with creators in real-time with blockchain-verified access</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFT Feature Section -->
+  <section class="feature-section nft-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="feature-title">Digital Collectibles &amp; NFTs</h2>
+          <p class="feature-text">Collect, display, and trade digital art, memorabilia, and exclusive content from your favorite creators. All NFTs on Ryhze are verified, authenticated, and interoperable.</p>
+
+          <ul class="feature-points">
+            <li><i class="fas fa-check-circle"></i> Authenticated digital collectibles</li>
+            <li><i class="fas fa-check-circle"></i> Creator-verified limited editions</li>
+            <li><i class="fas fa-check-circle"></i> Integrated marketplace for buying and selling</li>
+            <li><i class="fas fa-check-circle"></i> Cross-platform display and usage rights</li>
+          </ul>
+        </div>
+
+        <div class="feature-visual">
+          <div class="visual-container">
+            <img src="./Ryhze - Coming Soon_files/photo-1639762681057-408e52192e55" alt="NFT Collection">
+            <div class="visual-effect"></div>
+            <div class="feature-badge">NFTs</div>
+            <div class="overlay-content">
+              <h4>Digital Collectibles</h4>
+              <p>Own, display, and trade authenticated digital art and collectibles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Preview -->
+  <section class="platform-preview">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience <span class="highlight">Ryhze</span></h2>
+        <p>A glimpse of what's coming on August 8, 2025</p>
+      </div>
+
+      <div class="preview-mockup">
+        <div class="preview-header">
+          <div class="header-controls">
+            <span class="control-dot"></span>
+            <span class="control-dot"></span>
+            <span class="control-dot"></span>
+          </div>
+          <div class="preview-title">Ryhze Platform</div>
+        </div>
+
+        <div class="preview-content">
+          <div class="preview-grid">
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Chronos.jpg" alt="Chronos">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Chronos</div>
+                <div class="preview-card-meta">Time Management</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/crimson.jpg" alt="Crimson">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Crimson</div>
+                <div class="preview-card-meta">Action Game</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Culinary Journeys.jpg" alt="Culinary Journeys">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Culinary Journeys</div>
+                <div class="preview-card-meta">Cooking Series</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Sky Nomads.jpg" alt="Sky Nomads">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Sky Nomads</div>
+                <div class="preview-card-meta">Adventure Game</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/The Algorithm.jpg" alt="The Algorithm">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">The Algorithm</div>
+                <div class="preview-card-meta">Tech Series</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/The Frontman.jpg" alt="The Frontman">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">The Frontman</div>
+                <div class="preview-card-meta">Music Series</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Titans Fall.jpg" alt="Titans Fall">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Titans Fall</div>
+                <div class="preview-card-meta">Strategy Game</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Tournaments.jpg" alt="Tournaments">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Tournaments</div>
+                <div class="preview-card-meta">Gaming Events</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Trade Winds.jpg" alt="Trade Winds">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Trade Winds</div>
+                <div class="preview-card-meta">Trading Platform</div>
+              </div>
+            </div>
+
+            <div class="preview-card">
+              <div class="preview-card-image">
+                <img src="/images/Verdant Empire The Game.jpg" alt="Verdant Empire">
+              </div>
+              <div class="preview-card-content">
+                <div class="preview-card-title">Verdant Empire</div>
+                <div class="preview-card-meta">Strategy Game</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Be Among The First To Experience <span class="highlight">Ryhze</span></h2>
+        <p>Sign up for early access before our launch on August 8, 2025</p>
+
+        <div class="cta-form">
+                    
+          
+          <form action="http://localhost/ryhzeplatform/" method="POST" class="email-form">
+            <input type="email" name="email" placeholder="Your email address" required="" class="email-input" fdprocessedid="gf8qzd">
+            <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"><template shadowrootmode="closed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-lastpass-icon="true" style="position: absolute; cursor: pointer; height: 22px; max-height: 22px; width: 22px; max-width: 22px; top: 25px; left: -51px; z-index: auto; color: rgb(215, 64, 58);"><rect x="0.680176" y="0.763062" width="22.6392" height="22.4737" rx="4" fill="currentColor"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 7.9516C19.7935 7.64414 20.0427 7.3949 20.3502 7.3949C20.6576 7.3949 20.9069 7.64414 20.9069 7.9516V16.0487C20.9069 16.3562 20.6576 16.6054 20.3502 16.6054C20.0427 16.6054 19.7935 16.3562 19.7935 16.0487V7.9516Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.76288 13.6577C5.68525 13.6577 6.43298 12.9154 6.43298 11.9998C6.43298 11.0842 5.68525 10.3419 4.76288 10.3419C3.8405 10.3419 3.09277 11.0842 3.09277 11.9998C3.09277 12.9154 3.8405 13.6577 4.76288 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3298 13.6577C11.2521 13.6577 11.9999 12.9154 11.9999 11.9998C11.9999 11.0842 11.2521 10.3419 10.3298 10.3419C9.4074 10.3419 8.65967 11.0842 8.65967 11.9998C8.65967 12.9154 9.4074 13.6577 10.3298 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8964 13.6577C16.8188 13.6577 17.5665 12.9154 17.5665 11.9998C17.5665 11.0842 16.8188 10.3419 15.8964 10.3419C14.974 10.3419 14.2263 11.0842 14.2263 11.9998C14.2263 12.9154 14.974 13.6577 15.8964 13.6577Z" fill="white"></path></svg></template></div><button type="submit" class="btn" fdprocessedid="dzarxs">Get Early Access</button>
+          </form>
+          <div class="offer-tag">
+            <i class="fas fa-gift"></i>
+            First 3 months FREE + 20% off for a year
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="/3.png" alt="Ryhze Logo" class="footer-logo">
+
+      <div class="footer-text">
+        <p>© 2025 Ryhze. All rights reserved.</p>
+        <p>A blockchain-powered unified content platform giving true ownership to creators.</p>
+      </div>
+
+      <span class="social-links-title">Follow Us</span>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@ryhzeofficial" target="_blank" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/Ryhzeofficial" target="_blank" class="social-icon" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@ryhzeofficial" target="_blank" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/ryhzeofficial/" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitch.tv/ryhzeofficial" target="_blank" class="social-icon" title="Twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://kick.com/ryhze-official" target="_blank" class="social-icon" title="Kick"><i class="fas fa-gamepad"></i></a>
+        <a href="https://www.reddit.com/user/ryhzeofficial" target="_blank" class="social-icon" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
+        <a href="https://www.threads.net/@ryhzeofficial" target="_blank" class="social-icon" title="Threads"><i class="fab fa-at"></i></a>
+        <a href="https://www.linkedin.com/company/ryhze" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/ryhzeofficial/" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
